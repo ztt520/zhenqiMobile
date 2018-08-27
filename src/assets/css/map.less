@@ -1,0 +1,251 @@
+* {
+  font-family: "微软雅黑";
+}
+.map {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  overflow: hidden;
+}
+#allmap {
+  width: 100%;
+  height: calc(100% - 40px);
+}
+.topmenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 38px;
+  width: 25%;
+  box-shadow: 0 0 15px #f9f9f9;
+  width: 100%;
+}
+.menu_item {
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+}
+.item_menu {
+  font-size: 18px;
+}
+.menu_checked {
+  color: #0bcb76;
+  border-bottom: 2px solid #0bcb76;
+}
+.type_checked {
+  color: white;
+  background-color: #0bcb76;
+}
+.anchorBL {
+  display: none;
+}
+.BMap_stdMpCtrl {
+  bottom: 60px !important;
+  display: none;
+}
+.windandqiye{
+  width: 30px;
+  height: 61px;
+  position: fixed;
+  z-index: 9;
+  bottom: 160px;
+  right: 8px;
+  >div{
+    background-color: white;
+    margin: 10px 0;
+    width: 30px;
+    border-radius: 5px;
+    height: 30px;
+    >img{
+      width: 15px;
+      margin: 8px;
+    }
+  }
+}
+.map_c{
+  width: 30px;
+  height: 61px;
+  position: fixed;
+  z-index: 9;
+  bottom: 68px;
+  background-color: white;
+  border-radius: 5px;
+  right: 8px;
+  >div{
+    width: 30px;
+    height: 30px;
+    >img{
+      width: 15px;
+      margin: 8px;
+    }
+  }
+}
+
+.BMapLib_SearchInfoWindow .BMapLib_bubble_title,
+.BMapLib_SearchInfoWindow .BMapLib_bubble_tools div {
+  background-color: white;
+}
+.BMapLib_SearchInfoWindow .BMapLib_bubble_top {
+  border: 0;
+}
+.BMapLib_SearchInfoWindow {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gainsboro;
+}
+.BMapLib_trans {
+  width: 20px;
+  height: 10px;
+}
+.itemmenu {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  z-index: 9;
+  width: 25%;
+  box-shadow: 0 0 5px #f5f5f5;
+  background-color: white;
+  > p {
+    line-height: 40px;
+  }
+}
+
+.maptip {
+  // background-color: red;
+  width: 100%;
+  height: 100%;
+}
+.maptip_div {
+  width: 100%;
+  height: 50px;
+  // border: 1px solid #0bcb76;
+}
+.tip_weather {
+  height: 20px;
+  width: calc(33% - 10px);
+  padding: 5px;
+  float: left;
+  margin-top: 8px;
+  color: #696e75;
+  text-align: center;
+  > img,
+  > p {
+    float: left;
+    margin:0 auto;
+    font-size: 16px;
+    overflow: hidden;
+  }
+  > p {
+    
+    margin-left: 8px;
+    height: 19px;
+    line-height: 19px;
+  }
+  > img {
+    height: 18px;
+  }
+}
+.tip_four{
+  width: calc(25% - 14px);
+  padding: 5px;
+  height: 40px;
+  float: left;
+  margin-left: 3px;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  text-align: center;
+  > p {
+    margin:0 auto;
+    padding: 2px;
+    margin-bottom: 3px;
+  }
+  > label {
+    font-size: 15px;
+    color: #131d27;
+  }
+}
+.tip_six {
+  width: calc(16.6666% - 14px);
+  padding: 5px;
+  height: 40px;
+  float: left;
+  margin-left: 3px;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  text-align: center;
+  > p {
+    margin:0 auto;
+    padding: 2px;
+    margin-bottom: 3px;
+  }
+  > label {
+    font-size: 15px;
+    color: #131d27;
+  }
+}
+.tip_item {
+  background-color: #f6f6f6;
+  padding: 5px;
+  height: 40px;
+  float: left;
+  margin-left: 3px;
+  overflow: hidden;
+}
+.tip_cityname {
+  width: calc(48% - 10px);
+  > p {
+    margin:0 auto;
+    height: 25px;
+    font-size: 20px;
+    overflow: hidden;
+  }
+}
+.tip_aqi {
+  width: calc(24% - 10px);
+  text-align: center;
+  > p {
+    margin:0 auto;
+    padding: 2px;
+    margin-bottom: 3px;
+  }
+  > label {
+    font-size: 15px;
+  }
+}
+.tip_index {
+  text-align: center;
+  width: calc(24% - 10px);
+  > p {
+    margin:0 auto;
+    padding: 2px;
+    margin-bottom: 3px;
+  }
+  > label {
+    font-size: 15px;
+  }
+}
+
+.wrwdivlist {
+  position: fixed;
+  bottom: -1px;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  box-shadow: 0 0 5px #f5f5f5;
+  background-color: white;
+  font-size: 14px;
+  > div {
+    width: calc(16.6666% - 1px);
+    line-height: 28px;
+    float: left;
+    border-right: 1px solid #f8f8f8;
+    border-bottom: 1px solid #f8f8f8;
+  }
+}

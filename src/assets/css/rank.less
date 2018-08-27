@@ -1,0 +1,119 @@
+#rank {
+  // 顶部切换
+.topMenu {
+  width: 100%;
+  height: 0.43rem;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 0.01rem solid rgba(185, 185, 185, 0.10279999999999999);
+  .menu_item {
+    width: 50%;
+    position: relative;
+    &:first-child::after {
+      content: "";
+      display: inline-block;
+      width: 0.02rem;
+      height: 0.15rem;
+      background-color: #e1e1e1;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.075rem;
+      right: 0;
+    }
+    a {
+      display: inline-block;
+      height: .29rem;
+      font-size: .14rem;
+      font-family: PingFangSC-Medium;
+      font-weight: 500;
+      color: rgba(105, 110, 117, 1);
+      line-height: 0.2rem;
+    }
+    &.menu_check {
+      a {
+        color: #0bcb76;
+        border-bottom: 0.04rem solid #0bcb76;
+      }
+    }
+  }
+}
+// 城市切换
+.rankNav {
+  padding: .51rem .14rem  0.17rem .14rem;
+  .city {
+    position: relative;
+    height: 0.2rem;
+    font-size: .14rem;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(48, 48, 48, 1);
+    line-height: 0.2rem;
+    padding-left: 0.1rem;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0.06rem;
+      height: 0.06rem;
+      border-radius: 50%;
+      background: linear-gradient(
+        225deg,
+        rgba(50, 240, 189, 1) 0%,
+        rgba(3, 223, 125, 1) 100%
+      );
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -3px;
+    }
+  }
+  .el-radio+.el-radio{
+    margin-left: 0.1rem;
+  }
+  .el-radio-group{
+    padding-left: 0.1rem;
+    span.el-radio__input{
+      display: none !important;
+    }
+    .el-radio__label{
+      font-size:0.12rem;
+    }
+    .el-radio__input.is-checked+.el-radio__label {
+      color: #00CA70;
+      height:0.2rem;
+      font-size:.14rem;
+      font-family:PingFangSC-Medium;
+      font-weight:500;
+      line-height:0.2rem;
+  }
+ 
+  }
+}
+// 排序标题
+.airSort{
+  margin-top: .17rem;
+  p{
+   text-align: center;
+    height:.2rem;
+    font-size:.14rem;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    color:#303030;
+    line-height:.2rem;
+    &.sort_b{
+      height:.17rem;
+      font-size:.12rem;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      color:#9EA1A6;
+      line-height:.17rem;
+    }
+  }
+}
+// 表格样式
+.table{
+  padding-bottom: 1rem;
+}
+}

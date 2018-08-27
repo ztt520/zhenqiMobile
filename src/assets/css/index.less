@@ -1,0 +1,353 @@
+* {
+  font-family: "微软雅黑";
+}
+body{
+  margin:0;
+}
+ul,li{
+  list-style:none;  
+}
+#index{
+  padding-bottom: 0.58rem;
+  .cityname{
+    font-size: 0.16rem;
+    padding: 0.1rem 0;
+  }
+  .banner{
+    position: relative;
+    padding-top: 0.4rem;
+    background:url(../img/index/clear.png) center center;
+    padding-bottom: 0.8rem;
+    .temperature{
+      font-size: 0.5rem;
+    }
+    .weather{
+      margin-top: 0.05rem;
+      height: 0.2rem;
+      font-size: 0.12rem;
+      .drawing{
+        display: inline-block;
+        width: 0.15rem;
+        height: 0.15rem;
+        border-radius: 0.08rem;
+        background: yellow;
+      }
+      .text{
+        position: relative;
+        top: -2px;
+      }
+    }
+    .synthesize{
+      margin-top: 0.1rem; 
+      color: #696E75;
+      font-size: 0.12rem;  
+      img{
+        width: 0.12rem;
+      } 
+    }
+    .tip{
+      border-radius: 0.05rem;
+      height: 0.65rem;
+      width: 94%;
+      margin-left: 3%;
+      position: absolute;
+      bottom: -0.3rem;
+      background: white;
+      ul{
+        margin: 0;
+        overflow: hidden;
+        padding-left: 0;
+        li{
+          float: left;
+          width: 0.9rem;
+          font-size: 0.12rem;
+          padding-top: 0.09rem;
+          text-align: left;
+          padding-left: 0.25rem;
+          color: #696E75;
+          span{
+            margin-left: 0.15rem;
+            font-size: 0.14rem;
+            color: #24D184;
+          }
+        }
+      }
+    }
+  }
+  .AQI{
+    border-radius: 0.05rem;
+    min-height: 0.8rem;
+    width: 94%;
+    margin-left: 3%;
+    background: white;
+    position: relative;
+    padding-top: 0.05rem;
+    margin-top: 0.41rem;
+    font-size: 0.12rem;
+    img{
+      width: 0.5rem;
+      height: 0.5rem;
+      margin-left: 0.1rem;
+      float: left;
+    }
+    .left{
+      float: left;
+      margin-left: 0.65rem;
+      .top{
+        font-size: 0.24rem;
+      }
+      .bot{
+        font-size: 0.12rem;
+      }
+    }
+    .right{
+      float: right;
+      margin-right: 0.2rem;
+      .top{
+        font-size: 0.24rem;
+      }
+      .bot{
+        font-size: 0.12rem;
+      }
+    }
+    .wire{
+      border-top: 0.01rem solid #EFEFEF;
+      width: 100%;
+      margin-top: 0.1rem;
+    }
+    .details{
+      height: 1.09rem;
+      padding: 0.1rem;
+      .details-left{
+        float: left;
+        width: 0.5rem;
+        .left-top{
+          margin-bottom: 0.2rem;
+          .rank{
+            font-size: 0.18rem;
+          }
+          .day{
+            font-size: 0.12rem;
+          }
+        }
+        .left-bot{
+          .rank{
+            font-size: 0.18rem;
+          }
+          .day{
+            font-size: 0.12rem;
+          }
+        }
+      }
+      .details-right{
+        float: right;
+        width: 2.17rem;
+        height: 1rem;
+        .schedule-left{
+          float: left;
+          width: 0.8rem;
+          margin-bottom: 0.1rem;
+          .six{
+            float: left;
+          }
+          .val{
+            float: right;
+            font-size: 0.14rem;
+          }
+        }
+        .schedule-right{
+          float: right;
+          width: 0.8rem;
+          margin-bottom: 0.1rem;
+          .six{
+            float: left;
+          }
+          .val{
+            float: right;
+            font-size: 0.14rem;
+          }
+        }
+      }
+    }
+    .btn{
+      width: 100%;
+      font-size: 0.12rem;
+    }
+  }
+  .water{
+    border-radius: 0.05rem;
+    min-height: 1.06rem;
+    width: 94%;
+    margin-left: 3%;
+    background: white;
+    margin-top: 0.1rem;
+    padding-top: 0.05rem;
+    font-size: 0.12rem;
+    .site{
+      float: left;
+      margin-left: 0.1rem;
+      margin-bottom: 0.07rem;
+      img{
+        width: 0.12rem;
+        height: 0.12rem;
+        margin-left: 0;
+      }
+    }
+    img{
+      width: 0.5rem;
+      height: 0.5rem;
+      margin-left: 0.1rem;
+      float: left;
+    }
+    .left{
+      float: left;
+      margin-left: 0.65rem;
+      .top{
+        font-size: 0.18rem;
+      }
+      .bot{
+        font-size: 0.12rem;
+      }
+    }
+    .right{
+      float: right;
+      margin-right: 0.3rem;
+      .top{
+        font-size: 0.18rem;
+      }
+      .bot{
+        font-size: 0.12rem;
+      }
+    }
+    .wire{
+      border-top: 0.01rem solid #EFEFEF;
+      width: 100%;
+      margin-top: 0.1rem;
+    }
+    .details{
+      padding: 0.1rem;
+      .details-left{
+        float: left;
+        width: 0.5rem;
+        .left-top{
+          margin-bottom: 0.2rem;
+          .rank{
+            font-size: 0.16rem;
+          }
+          .day{
+            font-size: 0.12rem;
+          }
+        }
+      }
+      .details-right{
+        float: right;
+        width: 2.17rem;
+        .schedule-left{
+          float: left;
+          width: 0.8rem;
+          margin-bottom: 0.1rem;
+          .six{
+            float: left;
+          }
+          .val{
+            float: right;
+            font-size: 0.14rem;
+          }
+        }
+        .schedule-right{
+          float: right;
+          width: 0.8rem;
+          margin-bottom: 0.1rem;
+          .six{
+            float: left;
+          }
+          .val{
+            float: right;
+            font-size: 0.14rem;
+          }
+        }
+      }
+    }
+    .btn{
+      width: 100%;
+      font-size: 0.12rem;
+    }
+  }
+  .enterprise{
+    border-radius: 0.05rem;
+    min-height: 0.53rem;
+    width: 94%;
+    margin-left: 3%;
+    background: white;
+    margin-top: 0.1rem;
+    padding-top: 0.15rem;
+    font-size: 0.12rem;
+    margin-bottom: 0.1rem;
+    .left{
+      float: left;
+      width: 1.17rem;
+      .top{
+        font-size: 0.16rem;
+      }
+      .bot{
+        font-size: 0.12rem;
+      }
+    }
+    .center{
+      float: left;
+      margin-left: 0.16rem;
+      .top{
+        font-size: 0.24rem;
+      }
+      .bot{
+        font-size: 0.12rem;
+      }
+    }
+    .right{
+      float: right;
+      margin-right: 0.2rem;
+      .top{
+        font-size: 0.16rem;
+      }
+      .bot{
+        font-size: 0.12rem;
+      }
+    }
+  }
+  .table{
+    font-size: 0.12rem;
+    width: 89%;
+    padding: 0.1rem;
+    margin-left: 3%;
+    .title{
+      margin-bottom: 0.1rem;
+      font-size: 0.14rem;
+      overflow: hidden;
+      color: black;
+    }
+  }
+  .forecast{
+    font-size: 0.12rem;
+    width: 89%;
+    padding: 0.1rem 0;
+    margin-left: 5.5%;
+    border: 1px solid #D8D8D8;
+    border-radius: 0.03rem;
+    .title{
+      font-size: 0.14rem;
+      text-align: left;
+      .chunk{
+        width: 0.05rem;
+        height: 0.14rem;
+        background: #00E7A9;
+        display: inline-block;
+        margin-right: 0.1rem;
+      }
+    }
+    .wire{
+      border-top: 0.01rem solid #EFEFEF;
+      width: 100%;
+      margin-top: 0.1rem;
+    }
+  }
+}
