@@ -40,9 +40,42 @@
     }
   }
 }
+.itemmenu {
+  position: fixed;
+  top: .74rem;
+  left: .14rem;
+  z-index: 9;
+  width: .56rem;
+  height: .55rem;
+  background:#fff;
+  box-shadow:0px 0.06rem .04rem 0px rgba(19,40,0,0.06);
+  &.time{
+    left: 85%;
+    width: .45rem;
+    height: 1.08rem;
+  }
+  p {
+    padding-top: 0.06rem;
+    text-align: center;
+    height:20px;
+    font-size:14px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:#696E75;
+    line-height:20px;
+    &:first-child{
+      font-size:14px;
+      font-family:PingFangSC-Medium;
+      font-weight:500;
+      color:#303030;
+    }
+  }
+}
 // 城市切换
 .rankNav {
   padding: .51rem .14rem  0.17rem .14rem;
+  height: 0.05rem;
+  border-bottom: 0.01rem solid rgba(185, 185, 185, 0.10279999999999999);
   .city {
     position: relative;
     height: 0.2rem;
@@ -88,7 +121,6 @@
       font-weight:500;
       line-height:0.2rem;
   }
- 
   }
 }
 // 排序标题
@@ -115,5 +147,19 @@
 // 表格样式
 .table{
   padding-bottom: 1rem;
+  .el-table__row {
+    span{
+      display: inline-block;
+      width: .33rem;
+      height: .19rem;
+      line-height: .19rem;
+      text-align: center;
+      border-radius: .06rem;
+      color:#fff;
+    }
+  }
+  .el-table tr{
+    background-color: rgb(247, 248, 248);
+  }
 }
 }
