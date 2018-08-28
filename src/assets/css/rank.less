@@ -116,4 +116,44 @@
 .table{
   padding-bottom: 1rem;
 }
+//水质切换
+.waterNav{
+  height: .2rem;
+  padding-top: .45rem;
+  // background-color: pink;
+  .el-radio-group{
+    width: 3.75rem;
+    height: .2rem;
+    margin-top: .11rem;
+    padding-left: .15rem;
+    padding-right: .14rem;
+    .el-radio{
+      float: left;
+      height:.2rem;
+      font-size:.12;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      color:rgba(105,110,117,1);
+      line-height:.2rem;
+      margin-right: .35rem;
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    .el-radio__input.is-checked+.el-radio__label {
+      font-size:.14rem;
+      font-family:PingFangSC-Medium;
+      font-weight:500;
+      color:rgba(0,202,112,1);
+      line-height:.2rem;
+    }
+    .el-radio__label{
+      padding-left: 0;
+    }
+    .el-radio__input.is-checked,.el-radio__input{
+      display: none;
+    }
+  }
+}
 }

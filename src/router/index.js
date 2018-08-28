@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import appMap from '@/views/appMap/appmap'
 import index from '@/views/index'
 import rank from '@/views/rank/rank'
+import water from '@/views/rank/water'
 
 Vue.use(Router)
 
@@ -19,5 +20,9 @@ export default new Router({
         path: '/rank',
         name: 'rank',
         component: rank
+    },{
+        path: '/water',
+        name: 'water',
+        component: water
     }]
 })
