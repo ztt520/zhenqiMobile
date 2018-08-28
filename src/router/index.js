@@ -7,6 +7,7 @@ import water from '@/views/rank/water'
 import qiye from '@/views/list/qiye'
 import shui from '@/views/list/shui'
 import pollute from '@/views/list/pollute'
+import provinceRank from '@/views/rank/provinceRank'
 
 Vue.use(Router)
 
@@ -39,5 +40,10 @@ export default new Router({
         path: '/pollute',
         name: 'pollute',
         component: pollute
+    },
+    {
+        path: '/provinceRank',
+        name: 'provinceRank',
+        component: provinceRank
     }]
 })
