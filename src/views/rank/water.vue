@@ -14,14 +14,13 @@
         </el-radio-group>
     </div>
     <div class="table1">
-       <el-table :data="waterData" @sort-change='changeSort'>
-        <el-table-column  type="index" label="排序" sortable></el-table-column>
-        <el-table-column  label="监测点" ></el-table-column>
-        <el-table-column prop="water" label="水质"></el-table-column>
+       <el-table :data="waterData">
+        <el-table-column label="排序" prop="index" width="80" sortable></el-table-column>
+        <el-table-column  label="监测点" prop="jiance" width="185"></el-table-column>
+        <el-table-column prop="water" label="水质" width="110"></el-table-column>
         <!-- <template slot-scope="scope">
             {{scope.row.cityname}}
           </template> -->
-        
      </el-table>
     </div>
   </div>
@@ -49,11 +48,69 @@ export default {
         concernedcity:"西安|邯郸|邢台|乌鲁木齐|徐州|石家庄|保定|济南|兰州|太原|宿迁|沧州|常州|衡水|廊坊",
         timeflag: true,
       },
-      mapType: 1, //空气水质切换
-      checkedregion: "城市",
-      Checkime:"时",
+      mapType: 2, //空气水质切换
       regionlisthid: false,
-      waterData: [], //表格数据
+      waterData: [
+        {
+          index:1,
+          jiance:"浙江嘉兴斜路港",
+          water:"V"
+        },
+        {
+          index:2,
+          jiance:"浙江杭州鸠坑口",
+          water:"V"
+        },
+        {
+          index:3,
+          jiance:"浙江湖州新塘港",
+          water:"IV"
+        },
+        {
+          index:4,
+          jiance:"浙江嘉兴王江泾",
+          water:"IV"
+        },
+        {
+          index:5,
+          jiance:"浙江嘉兴斜路港",
+          water:"V"
+        },
+        {
+          index:6,
+          jiance:"浙江杭州鸠坑口",
+          water:"V"
+        },
+        {
+          index:7,
+          jiance:"浙江湖州新塘港",
+          water:"IV"
+        },
+        {
+          index:8,
+          jiance:"浙江嘉兴王江泾",
+          water:"IV"
+        },{
+          index:9,
+          jiance:"浙江嘉兴斜路港",
+          water:"V"
+        },
+        {
+          index:10,
+          jiance:"浙江杭州鸠坑口",
+          water:"V"
+        },
+        {
+          index:11,
+          jiance:"浙江湖州新塘港",
+          water:"IV"
+        },
+        {
+          index:12,
+          jiance:"浙江嘉兴王江泾",
+          water:"IV"
+        },
+      ], //表格数据
       sortData: [],//排序数据
     };
   },
@@ -120,7 +177,6 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-
 
 </style>
 

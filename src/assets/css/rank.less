@@ -183,10 +183,11 @@
       line-height:.2rem;
       margin-right: .35rem;
       margin-left: 0;
+      &:last-child{
+        margin-right: 0;
+      }
     }
-    &:last-child{
-      margin-right: 0;
-    }
+    
     .el-radio__input.is-checked+.el-radio__label {
       font-size:.14rem;
       font-family:PingFangSC-Medium;
@@ -202,4 +203,27 @@
     }
   }
 }
+.table1{
+  .el-table th div, .el-table th>.cell{   
+    text-align: center;
+    font-size:12px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(48,48,48,1);
+    line-height:17px;
+  }
+  tr{
+    background-color: #f7f8f8;
+  }
+  
+  .el-table_1_column_2{
+    border-left: 2px solid rgba(255,255,255,1);
+    border-right: 2px solid rgba(255,255,255,1);
+  }
+  .el-table td,.el-table th.is-leaf {
+    border-bottom: 2px solid rgba(255,255,255,1);
+}
+  
+}
+
 }
