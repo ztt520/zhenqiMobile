@@ -48,7 +48,7 @@
   width: .56rem;
   height: .55rem;
   background:#fff;
-  box-shadow:0px 0.06rem .04rem 0px rgba(19,40,0,0.06);
+  box-shadow:0 0.06rem .04rem 0 rgba(19,40,0,0.06);
   &.time{
     left: 85%;
     width: .45rem;
@@ -57,14 +57,14 @@
   p {
     padding-top: 0.06rem;
     text-align: center;
-    height:20px;
-    font-size:14px;
+    height:.2rem;
+    font-size:.14rem;
     font-family:PingFangSC-Regular;
     font-weight:400;
     color:#696E75;
-    line-height:20px;
+    line-height:.2rem;
     &:first-child{
-      font-size:14px;
+      font-size:.14rem;
       font-family:PingFangSC-Medium;
       font-weight:500;
       color:#303030;
@@ -75,7 +75,7 @@
 .rankNav {
   padding: .51rem .14rem  0.17rem .14rem;
   height: 0.05rem;
-  border-bottom: 0.01rem solid rgba(185, 185, 185, 0.10279999999999999);
+  // border-bottom: 0.01rem solid rgba(185, 185, 185, 0.10279999999999999);
   .city {
     position: relative;
     height: 0.2rem;
@@ -99,7 +99,7 @@
       position: absolute;
       left: 0;
       top: 50%;
-      margin-top: -3px;
+      margin-top: -.03rem;
     }
   }
   .el-radio+.el-radio{
@@ -125,7 +125,7 @@
 }
 // 排序标题
 .airSort{
-  margin-top: .17rem;
+  margin-top: .1rem;
   p{
    text-align: center;
     height:.2rem;
@@ -144,9 +144,51 @@
     }
   }
 }
+// 综指筛选
+.monthShow{
+  padding: .05rem .14rem;
+  height: .2rem;
+  .el-radio-group {
+    display: block;
+    .el-radio-button__inner{
+      padding: 4px 40px 0 40px;
+    }
+  }
+  .el-radio-button__orig-radio:checked+.el-radio-button__inner{
+    color: #00CA70;
+    background-color: #fff;
+    border-color:  #00CA70;
+    -webkit-box-shadow: -1px 0 0 0  #00CA70;
+    box-shadow: -1px 0 0 0  #00CA70;
+  }
+  .el-radio-button.is-active{
+    &:first-child,&:nth-child(2){
+      .el-radio-button__inner{
+        border-right: 1px solid #00CA70;
+      }
+    }
+  }
+  span{
+    height: .2rem;
+    font-size:12px;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    color:#696E75;
+  }
+  .el-radio-button:first-child .el-radio-button__inner,.el-radio-button:nth-child(2) .el-radio-button__inner{
+    border-right: 0;
+  }
+  .el-radio-button:focus:not(.is-focus):not(:active):not(.is-disabled) {
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+}
 // 表格样式
 .table{
+  padding-top: 0.1rem;
   padding-bottom: 1rem;
+  width: 100%;
+  overflow: hidden;
   .el-table__row {
     span{
       display: inline-block;
@@ -161,5 +203,39 @@
   .el-table tr{
     background-color: rgb(247, 248, 248);
   }
+  .el-table .cell, .el-table th div, .el-table--border td:first-child .cell, .el-table--border th:first-child .cell{
+    padding-left: 5px;
+    padding-right: 0;
+    text-align: center;
+  }
+  .el-table td, .el-table th.is-leaf {
+    border-bottom: .01rem solid #fff;
+}
+.el-table td{
+  border-right: .01rem solid #fff;
+}
+.el-table tr td:last-child{
+  border-right: none;
+}
+
+.el-table th div.cell{
+  font-size:.12rem;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:#303030;
+  line-height:.17rem;
+}
+.el-table td, .el-table th {
+  padding: .08rem 0;
+  div.cell{
+    text-align: center;
+  }
+}
+.el-table td div.cell{
+  font-size:.13rem;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:#696E75;
+}
 }
 }
