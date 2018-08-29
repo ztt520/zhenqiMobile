@@ -133,14 +133,13 @@ export default {
     },
     // 空气水质切换
     menuclick(index) {
-      this.mapType = index;
-      if (index == 2) {
-        console.log("水质");
-        // this.fetchWaterData();
-      } else {
-        console.log("空气");
-        // this.fetchData();
+      if(index==1){
+       this.$router.push({ name:'rank'});
+      }else{
+      this.$router.push({ name:'water'});
       }
+      this.mapType = index;
+      this.rankType=!this.rankType;
     },
     // 城市切换
     showregion() {
